@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World</Text>
-      <StatusBar style="auto" />
+      <Text style={styles.texto}>Ola mundo</Text>
+      <Button title="ola" color="#121214" />
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
-});
+  texto: {
+    fontSize: 64,
+    fontWeight: 'bold'
+  }
+})
